@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 280px 265px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+main div{
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.box1{
+    background: hsl(263, 55%, 52%) url(images/bg-pattern-quotation.svg) no-repeat;
+    background-position-x: 365px;
+    grid-column-start: 1;
+    grid-column-end:  3;
+    width: 540px;
+    color: hsl(0, 0%, 100%);
+}
+
+.box1 img{
+    border: 2px solid #A775F1;
+}
+
+section {
+    position: relative;
+    bottom: 15px;
+}
+
+.box2, .box3, .box4{
+    width: 250px;
+}
+
+.box2 {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.box3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-row-start: span 2 ;
+    color: hsl(217, 19%, 35%);
+}
+
+.box4 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.box5 {
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end:  4;
+    width: 540px;
+    color: hsl(0, 0%, 81%);
+}
+
+.box5 img{
+    border: 2px solid hsl(263, 55%, 52%);
+    
+} 
+
+.profile {
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    width: 250px;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.box1 .profile .sub-title, .box2 .profile .sub-title, .box5 .profile .sub-title {
+    color:hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+
+.box1 .text1, .box2 .text1, .box3 .text1, .box4 .text1,.box5 .text1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.box1 .text2, .box2 .text2, .box5 .text2{
+    opacity: 70%;
+    color: hsl(0, 0%, 81%);
+    line-height: 1.4;
+    
+}
+
+.box3 .profile .sub-title, .box4 .profile .sub-title {
+    opacity: 50%;
+}
+
+.box3 .text2, .box4 .text2{
+    opacity: 70%;
+    line-height: 1.4;
+}
+
+footer{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(263, 55%, 52%);
+    
+}
+
+footer a:hover{
+    opacity: 50%;
+    
+}
+
+/* mobile */
+@media (max-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1, .box2, .box3, .box4, .box5{
+        width: 321px;
+    }
+
+    .box3 {
+        order: 5;
+    }
+
+    footer{
+        position: relative;
+        bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
