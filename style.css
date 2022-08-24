@@ -14,12 +14,13 @@ main{
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 280px 265px;
     gap: 30px;
+    row-gap: 30px 40px;
     justify-content: center;
     align-items: center;
     margin: 50px auto;
 }
 
-main div{
+main div, article{
     border-radius: 10px;
     box-sizing: border-box;
     padding: 10px 15px;
@@ -38,7 +39,7 @@ main div{
     border: 2px solid #A775F1;
 }
 
-article {
+section {
     position: relative;
     bottom: 15px;
 }
